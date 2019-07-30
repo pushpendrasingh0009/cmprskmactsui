@@ -1,19 +1,17 @@
-.menu-right{
-    display: flex!important;
-    flex-basis: auto;
-    justify-content: flex-end;
-    line-height: 15px;
-    color:grey;
-}
 .navbar-brand{
     padding-top: 1rem;
     padding-left: 0.5rem;
+}
+.navbar-brand-data{
+    padding-top: 1.2rem;
+    color:rgb(187, 187, 187);
 }
 img{
     height:64px;
     width: 100%;
     border:0;
-    padding-left: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 1rem;
 }
 a{
     height: 64px;

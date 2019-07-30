@@ -7,13 +7,13 @@
       <div class="navbar-brand">|</div>
       <div class="navbar-brand">MACTS 2.0</div>
     </div>
-    <div class="d-flex justify-content-end">
+    <div class="d-flex justify-content-end" *ngIf="userService.isUserLoggedIn()">
         <div><img src="../../assets/icons/icon-clock.svg"></div>
-        <div class="navbar-brand">{{now | date:'HH:mm:ss'}}</div>
+        <div class="navbar-brand-data">{{now | date:'HH:mm:ss'}}</div>
         <div><img src="../../assets/icons/icon-location.svg"></div>
-        <div class="navbar-brand">{{city}}</div>
+        <div class="navbar-brand-data">{{city}}</div>
         <div><img src="../../assets/icons/icon-user.svg"></div>
-        <div class="navbar-brand">{{userService.username}}</div>
+        <div class="navbar-brand-data">{{userService.username}}</div>
         <div><img src="../../assets/icons/icon-menu.svg"></div>
     </div>
   </nav>
