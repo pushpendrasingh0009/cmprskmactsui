@@ -1,0 +1,15 @@
+button{
+    background-color: #008CBA;
+    font-family:'lato';
+    text-transform: capitalize;
+}
+
+p{
+    font-size:xx-large;
+    text-align-last:center;
+    font-family:'lato';
+}
+
+i{
+    margin-top: 10px;
+}

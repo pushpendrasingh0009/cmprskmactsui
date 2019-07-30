@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+body{
+  background-color: #ECECEC ;
+}
+
+header{
+  background-color:black;
+  color: white;
+  font-family: 'lato';
+}
+
+@font-face {
+    font-family: lato;
+    src: url(assets/fonts/Helvetica-Neue-LT-Std/HelveticaNeueLTStd-Lt.otf) format("opentype");
+}

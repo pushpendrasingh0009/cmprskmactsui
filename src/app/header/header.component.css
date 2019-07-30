@@ -1,0 +1,26 @@
+.menu-right{
+    display: flex!important;
+    flex-basis: auto;
+    justify-content: flex-end;
+    line-height: 15px;
+    color:grey;
+}
+.navbar-brand{
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+}
+img{
+    height:64px;
+    width: 100%;
+    border:0;
+    padding-left: 1rem;
+}
+a{
+    height: 64px;
+    width: 275px;
+    align-content: left;
+    padding: 0%
+}
+.navbar{
+    padding: 0rem;
+}
