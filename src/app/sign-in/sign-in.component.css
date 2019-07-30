@@ -35,3 +35,7 @@ p{
 button{
     background-color: #008CBA;
   }
+
+  error-message{
+      color: red;
+  }
