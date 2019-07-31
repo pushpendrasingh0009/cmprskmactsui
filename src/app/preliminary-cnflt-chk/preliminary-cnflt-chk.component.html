@@ -1,31 +1,41 @@
-<div class="container">
-  <div class="row">
-      <div class="col s8 offset-s2">
-          <div class="card grey lighten-2">
-              <div class="card-content white">
-                  <div class="row">
-                      <h5> <strong>PRELIMINARY CONFLICT CHECK</strong></h5>
+<div class="container mt-2">
+        <div class="row justify-content-center">
+          <div class="col-md-5">
+            <div class="card">
+              <article class="card-body pb-0">
+                <h4 class="card-title">Preliminary Conflict Check</h4>
+                <div class="chevron"><img class="chevron_image" src="assets/icons/macquarie-chevron.svg"></div>
+                <form #preCnfltChkForm="ngForm" class="col s12 white"
+                (ngSubmit)="OnSearch(PartiesName.value, DealAmount)">
 
-                      <form #preCnfltChkForm="ngForm" class="col s12 white"
-                          (ngSubmit)="OnSearch(PartiesName.value, DealAmount)">
-                          <div>
-                              <span class="font2">Who are the parties</span>
-                              <input class="font2" type="text" #PartiesName ngModel name="PartiesName"
-                                required>
-                          </div>
-                          <div>
-                              <span class="font2">What is the deal size</span>
-                              <input class="font2" type="text"
-                              [(ngModel)]="DealAmount" name="DealAmount" required>
-                          </div>
-                          <div>
-                            <button [disabled]="!preCnfltChkForm.valid" class="btn-large btn-submit"
-                                type="submit">Search Conflicts</button>
+                <div class="form-row">
+                        <label>Who are the parties</label>
+                        <div class="form-group col-md-11 pr-0">
+                          <input id="parties" class="form-control" #PartiesName ngModel name="PartiesName"
+                          required type="text">
                         </div>
-                       </form>
-                  </div>
-              </div>
+                </div>
+
+                <div class="form-row">
+                        <label>What is the deal size</label>
+                        <div class="form-group col-md-11 pr-0">
+                          <input id="parties" class="form-control"  [(ngModel)]="DealAmount" name="DealAmount" required
+                          required type="text">
+                        </div>
+                </div>
+
+                <div class="form-row">
+              <div class="form-group col-md-11">
+                    <button type="submit" [disabled]="!preCnfltChkForm.valid" class="btn btn-primary btn-block"> 
+                            Search Conflicts
+                    </button>
+            </div>
+        </div>
+
+             </form>
+              </article>
+            </div>
           </div>
+        </div>
       </div>
-  </div>
-</div>
+      
