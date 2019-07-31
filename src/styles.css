@@ -14,10 +14,23 @@ header{
 footer{
   background-color:#acecfc;
   padding-top: 1rem;
-  position: fixed;
+  position: relative;
   right: 0;
   bottom: 0;
   left: 0px;
+  padding-bottom: 1px;
+  margin-top: 3pt;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  min-height: 495px;
+  margin-top: 3pt;
+  margin-bottom:3pt;
 }
 
 @font-face {
