@@ -5,8 +5,8 @@
                 <article class="card-body">
                     <h4 class="card-title"><p>Sign In</p></h4>
                     <div class="chevron"><img class="chevron_image" src="assets/icons/macquarie-chevron.svg"> </div>
-                    <div *ngIf="isLoginError" class="error-message">
-                            <i class="fa fa-exclamation-triangle" aria-hidden="true">error</i> Incorrect username or password
+                    <div *ngIf="isLoginError" class="alert alert-danger" role="alert">
+                            <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>Incorrect username or password
                         </div>
                             <form #loginForm="ngForm" (ngSubmit)="OnSubmit(UserName.value,Password.value)">
                         <div class="form-group">

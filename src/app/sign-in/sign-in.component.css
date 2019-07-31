@@ -39,3 +39,7 @@ button{
   error-message{
       color: red;
   }
+
+  .alert{
+      text-align: center;
+  }
