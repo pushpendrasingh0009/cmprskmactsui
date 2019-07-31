@@ -50,8 +50,9 @@
                       </div>
                       <div id="checkbox_icon" class="col-md-1">
                         <label class=" checkbox">
-                        <input type="checkbox" />
-                        <span class="primary"></span>
+                        <input type="checkbox" id={{x.name}} name={{x.name}} [checked]="selectedParties.has(x.name)"
+                        (change)="OnChecked(x.name, $event)" />
+                        <span class="default"></span>
                         </label>
                       </div>
                       </div>
