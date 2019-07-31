@@ -39,4 +39,10 @@ export class HeaderComponent implements OnInit {
     this.showMenu = !this.showMenu;
   }
 
+  logout(){
+    this.userService.logout();
+    this.showMenu = !this.showMenu;
+  }
+
+  
 }
