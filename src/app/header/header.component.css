@@ -13,7 +13,7 @@ img{
     padding-left: 0.5rem;
     padding-right: 1rem;
 }
-a{
+.logo_header{
     height: 64px;
     width: 275px;
     align-content: left;
@@ -21,4 +21,28 @@ a{
 }
 .navbar{
     padding: 0rem;
+}
+
+
+.nav-link[data-toggle].collapsed:before {
+    content: "▾";
+}
+.nav-link[data-toggle]:not(.collapsed):before {
+    content: "▴";
+}
+
+.side-menu-right{
+    position: absolute;
+    left: 80%;
+    z-index: 2;
+    background-color: #fff;
+}
+
+.menu-submenu-div .col-2 {
+    flex: 0 0 16.666667%;
+    max-width: 20%;
+}
+
+li.nav-item a.nav-link{
+    line-height: 25px;
 }

@@ -13,8 +13,10 @@ export class HeaderComponent implements OnInit {
   now: Date;
   city: string;
   country: string;
+  showMenu: boolean;
 
   constructor(public userService: UserService) {
+    this.showMenu = false;
     setInterval(() => {
       this.now = new Date();
     }, 1);
@@ -33,6 +35,8 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
-
+  showHideMenu(){
+    this.showMenu = !this.showMenu;
+  }
 
 }
