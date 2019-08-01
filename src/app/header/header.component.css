@@ -3,8 +3,8 @@
     padding-left: 0.5rem;
 }
 .navbar-brand-data{
-    padding-top: 1.2rem;
     color:rgb(187, 187, 187);
+    margin-right: 0.5rem;
 }
 img{
     height:64px;
@@ -45,4 +45,9 @@ img{
 
 li.nav-item a.nav-link{
     line-height: 25px;
+}
+
+.header-img{
+    height: 1rem;
+    text-align: center;
 }
