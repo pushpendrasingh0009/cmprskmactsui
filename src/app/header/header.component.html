@@ -2,7 +2,7 @@
   <nav class="navbar">
     <div class="row">
       <div class="logo_header" routerLink="/home">
-        <img src="assets/images/logo/logo.png" alt="macqurie-logo">
+        <img style="cursor: pointer" src="assets/images/logo/logo.png" alt="macqurie-logo">
       </div>
       <div class="navbar-brand">|</div>
       <div class="navbar-brand">MACTS 2.0</div>
@@ -14,7 +14,7 @@
         <div class="navbar-brand-data">{{city}}</div>
         <div><img class="header-img" src="../../assets/icons/icon-user.svg"></div>
         <div class="navbar-brand-data">{{userService.username}}</div>
-        <div><img class="header-img" src="../../assets/icons/icon-menu.svg" (click)="showHideMenu()"></div>
+        <div><img style="cursor: pointer" class="header-img" src="../../assets/icons/icon-menu.svg" (click)="showHideMenu()"></div>
     </div>
   </nav>
 
