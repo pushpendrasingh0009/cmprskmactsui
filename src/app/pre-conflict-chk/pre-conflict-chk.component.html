@@ -1,12 +1,12 @@
 <div class="row justify-content-center">
-  <div class="card col-md-9">
+  <div class="card col-md-8">
     <article class="card-body">
       <h4 class="card-title">Preliminary Conflict Check</h4>
       <div class="chevron"><img class="chevron_image" src="assets/icons/macquarie-chevron.svg"></div>
       <form #preConflictChkForm="ngForm">
 
         <div class="form-row justify-content-center">
-          <div class="col-md-8">
+          <div class="col-md-7">
             <div class="form-row">
               <label>Who are the parties</label>
               <div class="form-group col-md-11 pr-0">
@@ -25,7 +25,7 @@
               <div class="form-group col-md-3 mb-1">
                 <label class="form-check">
                   <input class="form-check-input" type="checkbox" name="selectAll" id="selectall"
-                    (change)="onRadioSelect($event)" [disabled]="output.length<=0">
+                    (change)="onRadioSelect($event)" [disabled]="output.length <= 0">
                   <span class="form-check-label">Select all</span>
                 </label>
               </div>
@@ -61,8 +61,12 @@
               </div>
             </div>
           </div>
-          <div class="col-md-1"> </div>
-          <div class="col-md-3">
+          <div class="col-md-1">
+            <div class="row justify-content-center">
+              <img class="chevron_right" src="assets/icons/chevron_right.svg">
+            </div>
+          </div>
+          <div class="col-md-4">
             <div class="form-group">
               <label>Selected Parties*</label>
               <div class="selectedList">

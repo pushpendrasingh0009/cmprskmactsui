@@ -10,7 +10,7 @@ import { UserService } from '../service/user.service';
 })
 export class PreConflictChkComponent implements OnInit {
   searchData: SimplePartyFuse [] ;
-  output: SimplePartyFuse[];
+  output: SimplePartyFuse [] = [];
   parties: string;
   selectedParties: Set<string> ;
 
