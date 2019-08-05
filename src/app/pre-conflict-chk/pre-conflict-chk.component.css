@@ -7,13 +7,11 @@ input[type="text"]:read-only {
 
 .selectedList {
   padding-left: 6px;
-  margin-top:5px;
-  margin-bottom:25px;
   overflow-y: scroll;
   font-family:'lato';
   display: block;
   max-width: 100%;
-  height: calc(2.5em + .75rem);
+  height: 218pt;
   color: #495057;
   background-color: #fff;
   background-clip: padding-box;
@@ -30,7 +28,7 @@ input[type="text"]:read-only {
   font-family:'lato';
   display: block;
   width: inherit;
-  max-height: 120pt;
+  height: 150pt;
   color: #3f4041;
   background-color: #fff;
   background-clip: padding-box;
@@ -41,12 +39,15 @@ input[type="text"]:read-only {
 }
 
 .cancellable_div{
-  border: 0.1px solid rgb(211, 211, 211);
-  border-radius: 2.2px ;
-  background: rgb(224, 224, 224);
-  margin-right: 8px;
-  font-size: 9pt;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05), 0 1px 5px 0 rgba(0, 0, 0, 0.05);
+  border: 0.3px solid rgb(211, 211, 211);
+  padding: 2px;
+  height: 12px;
+  border-radius: 10.2px ;
+  background: rgb(221, 218, 218);
+  margin-right: 6px;
+  font-size: 8pt;
+  text-align: center;
+  font-family: lato;
 }
 
 
@@ -55,9 +56,9 @@ span a{
 }
 
 .close_img{
-  height: 20.1%;
-}
+  height: 5.5%;
 
+}
 
 #parties.form-control {
   border-right:0;
