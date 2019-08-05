@@ -1,54 +1,54 @@
-<header>
-  <nav class="navbar">
-    <div class="row">
-      <div class="logo_header" routerLink="/home">
-        <img style="cursor: pointer" src="assets/images/logo/logo.png" alt="macqurie-logo">
-      </div>
-      <div class="navbar-brand">|</div>
-      <div class="navbar-brand">MACTS 2.0</div>
+<nav class="navbar">
+  <div class="row">
+    <div class="logo_header" routerLink="/home">
+      <img style="cursor: pointer" src="assets/images/logo/logo.png" alt="macqurie-logo">
     </div>
-    <div class="d-flex justify-content-end" *ngIf="userService.isUserLoggedIn()">
-        <div><img class="header-img" src="../../assets/icons/icon-clock.svg"></div>
-        <div class="navbar-brand-data">{{now | date:'HH:mm:ss'}}</div>
-        <div><img class="header-img" src="../../assets/icons/icon-location.svg"></div>
-        <div class="navbar-brand-data">{{city}}</div>
-        <div><img class="header-img" src="../../assets/icons/icon-user.svg"></div>
-        <div class="navbar-brand-data">{{userService.username}}</div>
-        <div><img style="cursor: pointer" class="header-img" src="../../assets/icons/icon-menu.svg" (click)="showHideMenu()"></div>
-    </div>
-  </nav>
+    <div class="navbar-brand">|</div>
+    <div class="navbar-brand">MACTS 2.0</div>
+  </div>
+  <div class="d-flex justify-content-end" *ngIf="userService.isUserLoggedIn()">
+    <div><img class="header-img" src="../../assets/icons/icon-clock.svg"></div>
+    <div class="navbar-brand-data">{{now | date:'HH:mm:ss'}}</div>
+    <div><img class="header-img" src="../../assets/icons/icon-location.svg"></div>
+    <div class="navbar-brand-data">{{city}}</div>
+    <div><img class="header-img" src="../../assets/icons/icon-user.svg"></div>
+    <div class="navbar-brand-data">{{userService.username}}</div>
+    <div><img style="cursor: pointer" class="header-img" src="../../assets/icons/icon-menu.svg" (click)="showHideMenu()"></div>
+  </div>
+</nav>
 
-  <div class="menu-submenu-div" *ngIf="showMenu">
-
-    <div class="col-2 collapse d-md-flex pt-2 pb-3 side-menu-right" id="sidebar">
-        <ul class="nav flex-column flex-nowrap" style="width: 400px;">
-            <li class="nav-item"><a class="nav-link py-0" routerLink="/admin" (click)="showHideMenu()">Admin</a></li>
+<div class="menu-submenu-div" *ngIf="showMenu">
+  <div class="col-2 collapse d-md-flex pt-2 pb-3 side-menu-right" id="sidebar">
+    <ul class="nav flex-column flex-nowrap" style="width: 400px;">
+      <li class="nav-item"><a class="nav-link py-0" routerLink="/admin" (click)="showHideMenu()">Admin</a></li>
+      <div class="dropdown-divider"></div>
+      <li class="nav-item"><a class="nav-link py-0" routerLink="/search" (click)="showHideMenu()">Search</a></li>
+      <div class="dropdown-divider"></div>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#conflictchecking" data-toggle="collapse" data-target="#conflictchecking">
+          Conflict Checking </a>
+        <div class="collapse" id="conflictchecking" aria-expanded="false">
+          <ul class="flex-column pl-4 nav">
+            <li class="nav-item"><a class="nav-link py-0" routerLink="/preconfcheck"
+                (click)="showHideMenu()">Preliminary Conflict Check</a></li>
             <div class="dropdown-divider"></div>
-            <li class="nav-item"><a class="nav-link py-0" routerLink="/search" (click)="showHideMenu()">Search</a></li>
-            <div class="dropdown-divider"></div>
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#conflictchecking" data-toggle="collapse" data-target="#conflictchecking"> Conflict Checking </a>
-                <div class="collapse" id="conflictchecking" aria-expanded="false">
-                    <ul class="flex-column pl-4 nav">
-                        <li class="nav-item"><a class="nav-link py-0" routerLink="/preconfcheck" (click)="showHideMenu()">Preliminary Conflict Check</a></li>
-                        <div class="dropdown-divider"></div>
-                        <li class="nav-item"><a class="nav-link py-0" routerLink="/prelimiaryCnfltChk" (click)="showHideMenu()">Conflict Check Request</a></li>
-                    </ul>
-                </div>
-            </li>
-            <div class="dropdown-divider"></div>
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#crossing" data-toggle="collapse" data-target="#crossing"> Crossing </a>
-                <div class="collapse" id="crossing" aria-expanded="false">
-                    <ul class="flex-column pl-4 nav">
-                        <li class="nav-item"><a class="nav-link py-0" routerLink="/home" (click)="showHideMenu()">Crossing Request</a></li>
-                    </ul>
-                </div>
-            </li>
-            <div class="dropdown-divider"></div>
-            <li class="nav-item"><a class="nav-link py-0" routerLink="/login" (click)="logout()">Logout</a></li>
-        </ul>
-    </div>
+            <li class="nav-item"><a class="nav-link py-0" routerLink="/prelimiaryCnfltChk"
+                (click)="showHideMenu()">Conflict Check Request</a></li>
+          </ul>
+        </div>
+      </li>
+      <div class="dropdown-divider"></div>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#crossing" data-toggle="collapse" data-target="#crossing"> Crossing </a>
+        <div class="collapse" id="crossing" aria-expanded="false">
+          <ul class="flex-column pl-4 nav">
+            <li class="nav-item"><a class="nav-link py-0" routerLink="/home" (click)="showHideMenu()">Crossing
+                Request</a></li>
+          </ul>
+        </div>
+      </li>
+      <div class="dropdown-divider"></div>
+      <li class="nav-item"><a class="nav-link py-0" routerLink="/login" (click)="logout()">Logout</a></li>
+    </ul>
+  </div>
 </div>
-
-</header>

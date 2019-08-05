@@ -3,8 +3,8 @@
     padding-left: 0.5rem;
 }
 .navbar-brand-data{
-    color:rgb(187, 187, 187);
-    margin-right: 0.5rem;
+  color:rgb(187, 187, 187);
+  margin-right: 0.5rem;
 }
 img{
     height:64px;
@@ -48,6 +48,21 @@ li.nav-item a.nav-link{
 }
 
 .header-img{
-    height: 1rem;
-    text-align: center;
+  height: 1rem;
+  text-align: center;
+}
+
+#sidebar {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.10);
+  border-radius:  .25rem;
+}
+
+a{
+  font-family: lato;
+  color: rgb(112, 112, 112);
+}
+
+a:hover{
+  font-family: lato;
+  color: black;
 }

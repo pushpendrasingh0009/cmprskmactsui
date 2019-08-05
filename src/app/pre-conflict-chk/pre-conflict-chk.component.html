@@ -1,82 +1,77 @@
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-md-5">
-      <div class="card">
-        <article class="card-body">
-          <h4 class="card-title">Preliminary Conflict Check</h4>
-          <div class="chevron"><img class="chevron_image" src="assets/icons/macquarie-chevron.svg"></div>
-          <form #preConflictChkForm="ngForm">
-
-            <div class="form-row">
-              <label>Who are the parties</label>
-              <div class="form-group col-md-11 pr-0">
-                <input id="parties" class="form-control" name="parties" [(ngModel)]="parties" (input)=OnSearch()
-                  placeholder="Search" type="search">
-              </div>
-              <div class="form-group col-md-1 pl-0">
-                <span id="search_icon" class="form-control"><i class="fa fa-search"></i></span>
-              </div>
-            </div>
-
-            <div class="form-row" *ngIf="output?.length > 0">
-              <div class="form-group col-md-9 mb-1">
-                <label *ngIf="output?.length > 0">Search Result : </label>
-              </div>
-              <div class="form-group col-md-3 mb-1">
-                <label class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" name="selectAll" id="selectall"
-                    (change)="onRadioSelect($event)">
-                  <span class="form-check-label">Select all</span>
-                </label>
-              </div>
-            </div>
-
-            <div class="form-group" *ngIf="output?.length > 0">
-              <div class="searchList">
-                <ul class="list-group list-group-flush" *ngFor="let x of output">
-                  <li class="list-group-item">
-                    <div id="checkbox_row" class="row">
-                      <div class="col-md-11">
-                        <div id="checkbox_head" class="row">
-                          {{x.name}}
-                        </div>
-                        <div id="checkbox_desc" class="row">
-                          ISIN: {{x.data.Isin}},
-                          SEDOL: {{x.data.SEDOL}},
-                          CUSIP: {{x.data.CUSIP}},
-                          Ticker: {{x.data.Ticker}},
-                          TYPE: {{x.data.type}}
-                        </div>
-                      </div>
-                      <div id="checkbox_icon" class="col-md-1">
-                        <label class=" checkbox">
-                        <input type="checkbox" id={{x.name}} name={{x.name}} [checked]="selectedParties.has(x.name)"
-                        (change)="OnChecked(x.name, $event)" />
-                        <span class="default"></span>
-                        </label>
-                      </div>
-                      </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label>Selected Parties*</label>
-              <div class="selectedList">
-                <span *ngFor="let party of selectedParties" class="cancellable_div">{{party}} <a
-                    (click)="OnCancel(party)"><img class="close_img" src="assets/icons/close-span.svg"></a></span>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <button type="submit" [disabled]="selectedParties.size === 0" class="btn btn-primary btn-block"> Next
-              </button>
-            </div>
-
-          </form>
-        </article>
-      </div>
+<div class="row justify-content-center">
+  <div class="card col-md-5">
+    <article class="card-body">
+<h4 class="card-title">Preliminary Conflict Check</h4>
+<div class="chevron"><img class="chevron_image" src="assets/icons/macquarie-chevron.svg"></div>
+<form #preConflictChkForm="ngForm">
+  <div class="form-row">
+    <label>Who are the parties</label>
+    <div class="form-group col-md-11 pr-0">
+      <input id="parties" class="form-control" name="parties" [(ngModel)]="parties" (input)=OnSearch()
+        placeholder="Search" type="search">
+    </div>
+    <div class="form-group col-md-1 pl-0">
+      <span id="search_icon" class="form-control"><i class="fa fa-search"></i></span>
     </div>
   </div>
+
+  <div class="form-row" *ngIf="output?.length > 0">
+    <div class="form-group col-md-9 mb-1">
+      <label *ngIf="output?.length > 0">Search Result : </label>
+    </div>
+    <div class="form-group col-md-3 mb-1">
+      <label class="form-check">
+        <input class="form-check-input" type="checkbox" name="selectAll" id="selectall"
+          (change)="onRadioSelect($event)">
+        <span class="form-check-label">Select all</span>
+      </label>
+    </div>
+  </div>
+
+  <div class="form-group" *ngIf="output?.length > 0">
+    <div class="searchList">
+      <ul class="list-group list-group-flush" *ngFor="let x of output">
+        <li class="list-group-item">
+          <div id="checkbox_row" class="row">
+            <div class="col-md-11">
+              <div id="checkbox_head" class="row">
+                {{x.name}}
+              </div>
+              <div id="checkbox_desc" class="row">
+                ISIN: {{x.data.Isin}},
+                SEDOL: {{x.data.SEDOL}},
+                CUSIP: {{x.data.CUSIP}},
+                Ticker: {{x.data.Ticker}},
+                TYPE: {{x.data.type}}
+              </div>
+            </div>
+            <div id="checkbox_icon" class="col-md-1">
+              <label class=" checkbox">
+                <input type="checkbox" id={{x.name}} name={{x.name}} [checked]="selectedParties.has(x.name)"
+                  (change)="OnChecked(x.name, $event)" />
+                <span class="default"></span>
+              </label>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>Selected Parties*</label>
+    <div class="selectedList">
+      <span *ngFor="let party of selectedParties" class="cancellable_div">{{party}} <a (click)="OnCancel(party)"><img
+            class="close_img" src="assets/icons/close-span.svg"></a></span>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <button type="submit" [disabled]="selectedParties.size === 0" class="btn btn-primary btn-block"> Next
+    </button>
+  </div>
+
+</form>
+</article>
+</div>
 </div>

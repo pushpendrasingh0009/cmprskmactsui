@@ -1,25 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+  height: 100%;
+}
 
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form-control{
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.10);
+}
 
 body{
   background-color: #ECECEC ;
+  height: 100%;
+  position: relative;
 }
 
+#content {
+  min-height:100%;
+  position:relative;
+}
+
+section {
+  padding-bottom: 57px;
+}
 header{
   background-color:black;
   color: white;
   font-family: 'lato';
   font-size: 15px;
 }
+
 footer{
   background-color:#acecfc;
   padding-top: 1rem;
-  position: relative;
+  position: absolute;
   right: 0;
   bottom: 0;
   left: 0px;
   padding-bottom: 1px;
-  margin-top: 3pt;
 }
 
 .container {
@@ -28,7 +48,7 @@ footer{
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  min-height: 525px;
+  min-height: 80%;
   margin-top: 3pt;
   margin-bottom:3pt;
 }
@@ -36,4 +56,31 @@ footer{
 @font-face {
     font-family: lato;
     src: url(assets/fonts/Helvetica-Neue-LT-Std/HelveticaNeueLTStd-Lt.otf) format("opentype");
+}
+
+.card-title{
+  font-family: 'lato';
+  font-size: 20pt;
+  margin-bottom: 4px;
+  text-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.chevron_image {
+  height: 70%;
+  width: 80%;
+}
+
+.chevron {
+  height: 40px;
+  text-align: center;
+}
+
+button{
+  background-color: #008CBA;
+  font-family:'lato';
+  text-transform: capitalize;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.10);
+  margin-top: 20px;
 }
