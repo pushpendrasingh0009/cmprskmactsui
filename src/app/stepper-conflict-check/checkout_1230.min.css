@@ -420,12 +420,12 @@ body>form>.rcbSlide {
 }
 
 .search a {
-	display: inline-block;
+	display: block;
 	height: 27px;
 	width: 36px;
 	margin: 0;
 	padding: 0;
-	float: left
+	float: left;
 }
 
 .innerContainer {
@@ -1979,9 +1979,8 @@ h2 {
 
 .LogoCheck a {
 	line-height: 40px;
-	vertical-align: middle;
 	display: block;
-	height: 40px
+	height: 40px;
 }
 
 .LogoCheck img {
@@ -2024,7 +2023,6 @@ h2 {
 
 .lt-ie8 .ProgCheck .breadcrumb>li {
 	display: inline;
-	width: 17.5%;
 }
 
 .lt-ie8 .CheckWrap .AddressLink,
@@ -2674,7 +2672,6 @@ header .CheckoutProgress>.container-fluid {
 	text-decoration: underline;
 	line-height: 18px;
 	display: block;
-	vertical-align: middle;
 	padding: 0;
 	cursor: pointer;
 	font-size: 1.2em
