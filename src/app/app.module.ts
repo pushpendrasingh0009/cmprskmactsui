@@ -20,7 +20,7 @@ import { HomeComponent } from './home/home.component';
 import { PreConflictChkComponent } from './pre-conflict-chk/pre-conflict-chk.component';
 import { MatMenuModule} from '@angular/material/menu';
 import { PreliminaryCnfltChkComponent } from './preliminary-cnflt-chk/preliminary-cnflt-chk.component';
-
+import { StepperConflictCheckComponent } from './stepper-conflict-check/stepper-conflict-check.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +33,8 @@ import { PreliminaryCnfltChkComponent } from './preliminary-cnflt-chk/preliminar
     FooterComponent,
     HomeComponent,
     PreConflictChkComponent,
-    PreliminaryCnfltChkComponent
+    PreliminaryCnfltChkComponent,
+    StepperConflictCheckComponent
   ],
   imports: [
     BrowserModule,
