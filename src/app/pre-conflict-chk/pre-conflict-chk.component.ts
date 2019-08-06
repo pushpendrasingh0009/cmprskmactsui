@@ -13,6 +13,7 @@ export class PreConflictChkComponent implements OnInit {
   output: SimplePartyFuse [] = [];
   parties: string;
   selectedParties: Set<string> ;
+  selectAll = false;
 
   constructor(public userService: UserService) { }
 
@@ -33,6 +34,7 @@ export class PreConflictChkComponent implements OnInit {
     };
     const fuse = new Fuse(this.searchData, options);
     this.output = fuse.search(this.parties);
+    this.selectAll = false;
   }
 
   OnChecked(partyName: string, event) {

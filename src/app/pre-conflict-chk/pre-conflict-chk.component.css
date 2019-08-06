@@ -72,7 +72,7 @@ span a{
 #search_icon.form-control {
   border-left:0;
   margin-left:0;
-  padding-left: 0.45em;
+  padding: 0;
   border-radius: 0rem .25rem .25rem 0rem;
   box-shadow: 0;
 }
@@ -133,3 +133,7 @@ span.primary{
   width: 30%;
 }
 
+.img_search{
+  height: 100%;
+  width: 90%
+}
