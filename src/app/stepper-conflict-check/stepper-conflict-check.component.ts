@@ -8,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class StepperConflictCheckComponent implements OnInit {
 
   categories: any;
-  selected :any;
+  selected : string;
   constructor() {
+    this.selected = "Parties";
     this.categories = [
        'Parties',
        'Parties2',
@@ -17,7 +18,7 @@ export class StepperConflictCheckComponent implements OnInit {
     ]; 
   }
   select(item) {
-    this.selected = (this.selected === item ? null : item); 
+    this.selected = item; 
   };
 
   isActive(item) {
