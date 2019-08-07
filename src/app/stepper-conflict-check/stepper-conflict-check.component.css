@@ -8,7 +8,7 @@ img{
 }
 
 .ProgCheck .breadcrumb {
-	padding: 8px 5px;
+	padding: 0;
 	width: 100%;
 	border-radius: 0;
 	text-align: center;
@@ -22,13 +22,13 @@ img{
 	padding: 12px 0 12px 13px;
 	background-color: #d1d1d1;
 	box-sizing: border-box;
-	width: 33%;
+	width: 33.3333%;
 	white-space: nowrap;
-	color: #666;
-	position: relative;
+  color: rgb(54, 53, 53);
+  position: relative;
 	text-shadow: 0 0 2px rgba(0, 0, 0, .2);
-	-webkit-box-sizing: border-box;
-	float: left;
+  -webkit-box-sizing: border-box;
+   float: left;
 }
 
 .ProgCheck .breadcrumb.numsteps6>li {
@@ -38,7 +38,7 @@ img{
 
 
 .ProgCheck .breadcrumb>li.active {
-	background-color: #888;
+	background-color: rgb(71, 71, 71);
 	color: #fff
 }
 
@@ -72,7 +72,7 @@ img{
 }
 
 .ProgCheck .breadcrumb>li.active:after {
-	border-left: 20px solid #888
+	border-left: 20px solid  rgb(71, 71, 71);
 }
 
 .ProgCheck .breadcrumb>li:last-child:after {

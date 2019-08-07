@@ -1,0 +1,19 @@
+#input-search.form-control {
+  border-right:0;
+  margin-right:0;
+  border-radius: .25rem 0rem 0rem .25rem;
+  box-shadow: 0;
+}
+
+#icon-search.form-control {
+  border-left:0;
+  margin-left:0;
+  padding: 0;
+  border-radius: 0rem .25rem .25rem 0rem;
+  box-shadow: 0;
+}
+
+.img_search{
+  height: 100%;
+  width: 90%
+}

@@ -21,6 +21,7 @@ import { PreConflictChkComponent } from './pre-conflict-chk/pre-conflict-chk.com
 import { MatMenuModule} from '@angular/material/menu';
 import { PreliminaryCnfltChkComponent } from './preliminary-cnflt-chk/preliminary-cnflt-chk.component';
 import { StepperConflictCheckComponent } from './stepper-conflict-check/stepper-conflict-check.component';
+import { SearchBarComponent } from './search-bar/search-bar.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { StepperConflictCheckComponent } from './stepper-conflict-check/stepper-
     HomeComponent,
     PreConflictChkComponent,
     PreliminaryCnfltChkComponent,
-    StepperConflictCheckComponent
+    StepperConflictCheckComponent,
+    SearchBarComponent
   ],
   imports: [
     BrowserModule,

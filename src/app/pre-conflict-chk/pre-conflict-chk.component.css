@@ -1,5 +1,4 @@
 
-
 input[type="text"]:read-only {
     cursor: normal;
     color: #999;
@@ -51,7 +50,6 @@ input[type="text"]:read-only {
   display: inline-block;
 }
 
-
 span a{
   cursor: pointer;
 }
@@ -60,21 +58,6 @@ span a{
   height: 15px;
   padding-bottom: 2.5px;
 
-}
-
-#parties.form-control {
-  border-right:0;
-  margin-right:0;
-  border-radius: .25rem 0rem 0rem .25rem;
-  box-shadow: 0;
-}
-
-#search_icon.form-control {
-  border-left:0;
-  margin-left:0;
-  padding: 0;
-  border-radius: 0rem .25rem .25rem 0rem;
-  box-shadow: 0;
 }
 
 /* Added for check box */
@@ -133,7 +116,3 @@ span.primary{
   width: 30%;
 }
 
-.img_search{
-  height: 100%;
-  width: 90%
-}

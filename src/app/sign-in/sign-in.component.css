@@ -40,3 +40,8 @@ p{
   .alert{
       text-align: center;
   }
+
+
+  hr {
+    margin-bottom: 1.2rem;
+  }

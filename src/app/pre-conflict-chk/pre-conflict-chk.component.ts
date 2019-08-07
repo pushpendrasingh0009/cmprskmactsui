@@ -11,7 +11,6 @@ import { UserService } from '../service/user.service';
 export class PreConflictChkComponent implements OnInit {
   searchData: SimplePartyFuse [] ;
   output: SimplePartyFuse [] = [];
-  parties: string;
   selectedParties: Set<string> ;
   selectAll = false;
 
@@ -33,7 +32,7 @@ export class PreConflictChkComponent implements OnInit {
       keys: ['name', 'data'],
     };
     const fuse = new Fuse(this.searchData, options);
-    this.output = fuse.search(this.parties);
+    this.output = fuse.search(searchValue);
     this.selectAll = false;
   }
 

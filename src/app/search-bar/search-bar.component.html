@@ -1,0 +1,11 @@
+<div class="form-row">
+  <label>{{searchLabel}}</label>
+  <div class="form-group col-md-11 pr-0">
+    <input id="input-search" class="form-control" (input)="defaultSearch()" placeholder="Search" type="search"
+      autocomplete="off" [(ngModel)]="searchValue">
+  </div>
+  <div class="form-group col-md-1 pl-0">
+    <div id="icon-search" class="form-control"><img class="img_search" src="assets/icons/icon-search.svg">
+    </div>
+  </div>
+</div>

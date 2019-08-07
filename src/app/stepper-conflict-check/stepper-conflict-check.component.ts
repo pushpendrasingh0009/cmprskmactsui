@@ -1,29 +1,29 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'stepper-conflict-check',
+  selector: 'app-stepper-conflict-check',
   templateUrl: './stepper-conflict-check.component.html',
   styleUrls: ['./stepper-conflict-check.component.css']
 })
 export class StepperConflictCheckComponent implements OnInit {
 
   categories: any;
-  selected : string;
+  selected: string;
   constructor() {
-    this.selected = "Parties";
+    this.selected = 'Parties';
     this.categories = [
-       'Parties',
-       'Parties2',
-       'Summary'
-    ]; 
+      'Parties',
+      'Parties2',
+      'Summary'
+    ];
   }
   select(item) {
-    this.selected = item; 
-  };
+    this.selected = item;
+  }
 
   isActive(item) {
-      return this.selected === item;
-  };
+    return this.selected === item;
+  }
 
   ngOnInit() {
   }
