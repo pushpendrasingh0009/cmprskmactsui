@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'stepper-conflict-check',
   templateUrl: './stepper-conflict-check.component.html',
-  styleUrls: ['./stepper-conflict-check.component.css','./responsiveskin.min.css','./checkout_1230.min.css']
+  styleUrls: ['./stepper-conflict-check.component.css']
 })
 export class StepperConflictCheckComponent implements OnInit {
 
