@@ -16,8 +16,6 @@ export class SearchBarComponent implements OnInit {
   }
 
   defaultSearch() {
-
-    console.log('hello' + this.searchValue);
     this.searchEmitter.emit(this.searchValue);
   }
 
