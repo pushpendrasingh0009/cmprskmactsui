@@ -6,7 +6,7 @@ import { SearchComponent } from './search/search.component';
 import { AuthGuard } from './auth/auth.guard';
 import { HomeComponent } from './home/home.component';
 import { PreConflictChkComponent } from './pre-conflict-chk/pre-conflict-chk.component';
-import { PreliminaryCnfltChkComponent } from './preliminary-cnflt-chk/preliminary-cnflt-chk.component';
+import { CnfltChkReqComponent } from './cnflt-chk-req/cnflt-chk-req.component';
 
 export const routes: Routes = [
   { path: 'login', component: SignInComponent },
@@ -14,7 +14,7 @@ export const routes: Routes = [
   { path: 'search', component: SearchComponent, canActivate: [AuthGuard] },
   { path: 'home', component: HomeComponent, canActivate: [AuthGuard] },
   { path: 'preconfcheck', component: PreConflictChkComponent, canActivate: [AuthGuard] },
-  { path: 'prelimiaryCnfltChk', component: PreliminaryCnfltChkComponent, canActivate: [AuthGuard] },
+  { path: 'prelimiaryCnfltChk', component: CnfltChkReqComponent, canActivate: [AuthGuard] },
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: '**', redirectTo: '/login', pathMatch: 'full' }
 ];

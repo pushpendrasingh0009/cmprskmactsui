@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+
 
 @Component({
   selector: 'app-stepper-conflict-check',
@@ -6,19 +7,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./stepper-conflict-check.component.css']
 })
 export class StepperConflictCheckComponent implements OnInit {
-
+  @Output() stepperValueChange = new EventEmitter<number>();
+  stepperIndex: number;
   categories: any;
   selected: string;
   constructor() {
-    this.selected = 'Parties';
     this.categories = [
-      'Parties',
-      'Parties2',
-      'Summary'
+      'Parties Search',
+      'Deal Size',
+      'Conflict Summary'
     ];
+    this.selected = this.categories[0];
   }
-  select(item) {
+  select(item, index: number) {
     this.selected = item;
+    this.stepperIndex = index;
+    this.stepperValueChange.emit(this.stepperIndex);
   }
 
   isActive(item) {

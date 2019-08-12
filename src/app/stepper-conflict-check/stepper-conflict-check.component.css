@@ -29,6 +29,7 @@ img{
 	text-shadow: 0 0 2px rgba(0, 0, 0, .2);
   -webkit-box-sizing: border-box;
    float: left;
+   cursor: pointer;
 }
 
 .ProgCheck .breadcrumb.numsteps6>li {
@@ -39,11 +40,12 @@ img{
 
 .ProgCheck .breadcrumb>li.active {
 	background-color: rgb(71, 71, 71);
-	color: #fff
+  color: #fff;
+  cursor: default;
 }
 
 .ProgCheck .breadcrumb>li.active a {
-	color: #fff
+  color: #fff;
 }
 
 .ProgCheck .breadcrumb>li.active a:hover {

@@ -5,10 +5,9 @@
         <div class="row">
           <ol class="breadcrumb">
             <!-- <li class="active"> <i class="fa fa-check-circle" aria-hidden="true"></i> Parties </li> -->
-            <li *ngFor="let n of categories" (click)="select(n)" [ngClass]="{'active': isActive(n)}">
+            <li *ngFor="let n of categories; let i = index" (click)="select(n,i)" [ngClass]="{'active': isActive(n)}">
               <i *ngIf="isActive(n)" class="fa fa-check-circle" aria-hidden="true"></i> {{n}}
             </li>
-
           </ol>
         </div>
       </div>

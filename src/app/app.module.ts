@@ -6,7 +6,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AuthInterceptor } from './auth/auth.interceptor';
 import { AppRoutingModule } from './app-routing.module';
-
 import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
 import { AdminComponent } from './admin/admin.component';
@@ -18,9 +17,12 @@ import { UserService } from './service/user.service';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { HomeComponent } from './home/home.component';
 import { PreConflictChkComponent } from './pre-conflict-chk/pre-conflict-chk.component';
-import { PreliminaryCnfltChkComponent } from './preliminary-cnflt-chk/preliminary-cnflt-chk.component';
+import { CnfltChkReqComponent } from './cnflt-chk-req/cnflt-chk-req.component';
 import { StepperConflictCheckComponent } from './stepper-conflict-check/stepper-conflict-check.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
+import { PartySearchComponent } from './party-search/party-search.component';
+import { PartyDealComponent } from './party-deal/party-deal.component';
+import { ConflictSummaryComponent } from './conflict-summary/conflict-summary.component';
 
 @NgModule({
   declarations: [
@@ -33,9 +35,12 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
     FooterComponent,
     HomeComponent,
     PreConflictChkComponent,
-    PreliminaryCnfltChkComponent,
+    CnfltChkReqComponent,
     StepperConflictCheckComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    PartySearchComponent,
+    PartyDealComponent,
+    ConflictSummaryComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +48,6 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
     HttpClientModule,
     BrowserAnimationsModule,
     AppRoutingModule
-    
   ],
   providers: [UserService,AuthGuard,
     {

@@ -1,12 +1,12 @@
 <div class="row justify-content-center">
   <div class="card col-md-5">
     <article class="card-body">
-      <h4 class="card-title">Preliminary Conflict Check</h4>
+      <h4 class="card-title">Conflict Check Request</h4>
       <!-- <div class="chevron"><img class="chevron_image" src="assets/icons/macquarie-chevron.svg"></div> -->
       <hr>
       <form #preCnfltChkForm="ngForm" class="col s12 white" (ngSubmit)="OnSearch(PartiesName.value, DealAmount)">
 
-        <div class="form-group">
+        <!-- <div class="form-group">
           <label>Who are the parties</label>
           <input id="parties" class="form-control" #PartiesName ngModel name="PartiesName" required type="text">
         </div>
@@ -21,7 +21,7 @@
           <button type="submit" [disabled]="!preCnfltChkForm.valid" class="btn btn-primary btn-block">
             Search Conflicts
           </button>
-        </div>
+        </div> -->
       </form>
     </article>
   </div>

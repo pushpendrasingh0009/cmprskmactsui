@@ -1,0 +1,19 @@
+<div class="row justify-content-center">
+<form #preCnfltChkForm="ngForm" class="col-md-6 s12" (ngSubmit)="OnSearch(PartiesName.value, DealAmount)">
+  <div class="form-group">
+    <label>Who are the parties</label>
+    <input id="parties" class="form-control" #PartiesName ngModel name="PartiesName" required type="text">
+  </div>
+
+  <div class="form-group">
+    <label>What is the deal size</label>
+    <input id="parties" class="form-control" [(ngModel)]="DealAmount" name="DealAmount" required required type="text">
+  </div>
+
+  <div class="form-group">
+    <button type="submit" [disabled]="!preCnfltChkForm.valid" class="btn btn-primary btn-block">
+      Search Conflicts
+    </button>
+  </div>
+</form>
+</div>
