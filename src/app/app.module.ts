@@ -49,7 +49,7 @@ import { ConflictSummaryComponent } from './conflict-summary/conflict-summary.co
     BrowserAnimationsModule,
     AppRoutingModule
   ],
-  providers: [UserService,AuthGuard,
+  providers: [UserService, AuthGuard,
     {
       provide: HTTP_INTERCEPTORS,
       useClass : AuthInterceptor,
