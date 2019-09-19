@@ -5,6 +5,7 @@ import { USER_TOKEN, API_URL, GET_LOCATION_URL } from '../app.constants';
 import { Location } from '../model/location.response.model';
 import { Observable } from 'rxjs';
 import { SimplePartyFuse } from '../pre-conflict-chk/pre-conflict-chk.model';
+import { environment } from 'src/environments/environment';
 
 @Injectable()
 export class UserService {
@@ -18,7 +19,7 @@ export class UserService {
   userAuthentication(username, password) {
     let data = { 'username': username, 'password': password };
     let reqHeader = new HttpHeaders({ 'Content-Type': 'application/json; charset=utf-8', 'dataType': 'json', 'No-Auth': 'True' });
-    return this.http.post(API_URL + 'create/token', data, { headers: reqHeader });
+    return this.http.post(environment.API_url, data, { headers: reqHeader });
   }
 
   isUserLoggedIn() {
